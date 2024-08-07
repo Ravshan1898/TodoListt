@@ -1,48 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 form {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 input[type="text"] {
-  width: 70%;
-  padding: 8px;
-  border-radius: 4px;
+  flex: 1;
+  padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button.add {
-  padding: 8px 12px;
-  background-color: #28a745;
-  color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button.add:hover {
@@ -52,31 +60,36 @@ button.add:hover {
 .box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .card {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 4px;
+  background-color: #fff;
   border: 1px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 h2 {
-  font-size: 18px;
-  margin: 0;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 button.delete {
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 4px;
   padding: 5px 10px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
 }
 
 button.delete:hover {
